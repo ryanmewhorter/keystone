@@ -1,0 +1,90 @@
+.page {
+  height: 100vh;
+}
+
+.page:not(:first-child) {
+  margin-top: 4em;
+}
+
+#about.page {
+  background-image: url("../img/001.jpeg");
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#about.page .description {
+  background-color: #FFF;
+  border-radius: 1em;
+}
+
+form[name="contact"] {
+  max-width: 40em;
+}
+
+body {
+  font-size: 12pt;
+}
+
+.contents {
+  max-width: none;
+}
+
+header img.logo {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+footer {
+  text-align: center;
+}
+
+ul.nav.flex-column {
+  width: 100%;
+}
+
+.nav .nav-item {
+  text-align: center;
+  margin: .5em 1em;
+}
+
+.nav-item .nav-link {
+  color: white;
+  border-radius: 0.25em;
+  background-color: #57b5dd; /* Keystone light blue */
+}
+
+.nav-item .nav-link:hover {
+  background-color: #237bbe; /* Keystone dark blue */
+}
+
+@media screen and (max-width: 576px) {
+  .sidebar {
+    margin-bottom: auto;
+    height: initial;
+    border-bottom: #eaeaea 1px solid;
+  }
+  main {
+    margin-top: auto;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 577px) {
+  html, body, .contents, .contents>div, .sidebar, main {
+    height:100%;
+  }
+  .sidebar {
+    position: fixed;
+    margin-right: auto;
+    border-right: #eaeaea 1px solid;
+    height: 100%;
+  }
+
+  main {
+    margin-left: auto;
+    height: 100%;
+  }
+}
